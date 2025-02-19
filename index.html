@@ -1,52 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lethal Company & Content Warning Guide</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <h1>Lethal Company & Content Warning Guide</h1>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about-lc">About Lethal Company</a></li>
-            <li><a href="#lc-monsters">Lethal Company Monsters</a></li>
-            <li><a href="#lc-items">Lethal Company Items</a></li>
-            <li><a href="#lc-maps">Lethal Company Maps</a></li>
-            <li><a href="#about-cw">About Content Warning</a></li>
-            <li><a href="#cw-entities">Content Warning Entities</a></li>
-            <li><a href="#cw-equipment">Content Warning Equipment</a></li>
-            <li><a href="#cw-maps">Content Warning Maps</a></li>
-            <li><a href="#steam">Steam Pages</a></li>
-        </ul>
-    </nav>
-    <input type="text" id="search" placeholder="Search...">
-    <main>
-        <section id="about-lc">
-            <h2>About Lethal Company</h2>
-            <p>Lethal Company is a cooperative horror survival game...</p>
-            <img src="lc-gameplay.jpg" alt="Lethal Company Screenshot">
-        </section>
-        
-        <section id="lc-monsters">
-            <h2>Lethal Company Monsters</h2>
-            <div class="monster">
-                <h3>The Shadow Stalker</h3>
-                <p><strong>Behavior:</strong> Lurks in dark areas.</p>
-                <p><strong>Weakness:</strong> Bright light stuns it.</p>
-                <img src="shadow-stalker.jpg" alt="Shadow Stalker Monster">
-            </div>
-        </section>
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
 
-        <button id="back-to-top">Back to Top</button>
-    </main>
-    <footer>
-        <p>&copy; 2025 Heyimlennon. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+header {
+    background: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff6347;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #ff6347;
+    margin-top: 0;
+}
+
+.monster, .item, .map, .entity, .equipment {
+    background: #3a3a3a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.map-details, .entity-details, .equipment-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.map-details p, .entity-details p, .equipment-details p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+.steam-link {
+    display: inline-block;
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.steam-link:hover {
+    background: #ff4500;
+}
