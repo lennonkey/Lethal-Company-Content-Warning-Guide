@@ -81,7 +81,7 @@ h3 {
     margin-top: 0;
 }
 
-.monster, .item, .map {
+.monster, .item, .map, .category {
     background: #3a3a3a;
     padding: 15px;
     margin-bottom: 20px;
@@ -89,14 +89,14 @@ h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.map-details {
+.map-details, .category-details {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     margin-top: 10px;
 }
 
-.map-details p {
+.map-details p, .category-details p {
     margin: 5px 0;
 }
 
