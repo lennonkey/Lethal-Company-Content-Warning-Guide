@@ -6,7 +6,7 @@
     <title>Lethal Company Guide</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -14,15 +14,25 @@
             color: #f4f4f4;
         }
         header {
-            background: #333;
+            background: #222;
             color: #fff;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ff6347;
         }
         nav {
-            background: #444;
+            background: #333;
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         nav ul {
             list-style: none;
@@ -31,41 +41,81 @@
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6347;
         }
         main {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         section {
             margin-bottom: 40px;
+            background: #2e2e2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         h2 {
             color: #ff6347;
             border-bottom: 2px solid #ff6347;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-        .monster {
-            background: #2e2e2e;
+        h3 {
+            color: #ff6347;
+            margin-top: 0;
+        }
+        .monster, .item, .map {
+            background: #3a3a3a;
             padding: 15px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .monster h3 {
-            color: #ff6347;
+        .monster h3, .item h3, .map h3 {
+            margin-top: 0;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background: #333;
+            padding: 15px;
+            background: #222;
             color: #fff;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            color: #ff6347;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff4500;
+            text-decoration: underline;
+        }
+        .steam-link {
+            display: inline-block;
+            background: #ff6347;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        .steam-link:hover {
+            background: #ff4500;
         }
     </style>
 </head>
@@ -77,46 +127,118 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#monsters">Monsters</a></li>
-            <li><a href="#mechanics">Mechanics</a></li>
+            <li><a href="#items">Items</a></li>
+            <li><a href="#maps">Maps</a></li>
+            <li><a href="#steam">Steam Page</a></li>
         </ul>
     </nav>
     <main>
         <!-- About Section -->
         <section id="about">
             <h2>About Lethal Company</h2>
-            <p>Lethal Company is a cooperative horror game where players work together to survive terrifying monsters and complete objectives. This guide provides detailed information about the game's monsters, mechanics, and strategies.</p>
+            <p>Lethal Company is a cooperative horror game where players work together to survive terrifying monsters and complete objectives. This guide provides detailed information about the game's monsters, items, maps, and more.</p>
         </section>
 
         <!-- Monsters Section -->
         <section id="monsters">
             <h2>Monsters</h2>
             <div class="monster">
-                <h3 id="monster1">Monster 1: The Shadow Stalker</h3>
-                <p><strong>Behavior:</strong> The Shadow Stalker is a stealthy predator that lurks in dark areas. It attacks when players are isolated.</p>
-                <p><strong>Weakness:</strong> Bright light can temporarily stun it.</p>
+                <h3>The Shadow Stalker</h3>
+                <p><strong>Behavior:</strong> A stealthy predator that lurks in dark areas. It attacks isolated players.</p>
+                <p><strong>Weakness:</strong> Bright light stuns it temporarily.</p>
             </div>
             <div class="monster">
-                <h3 id="monster2">Monster 2: The Blood Crawler</h3>
-                <p><strong>Behavior:</strong> This monster crawls on walls and ceilings, dropping down to ambush players.</p>
-                <p><strong>Weakness:</strong> Loud noises can disorient it.</p>
+                <h3>The Blood Crawler</h3>
+                <p><strong>Behavior:</strong> Crawls on walls and ceilings, ambushing players from above.</p>
+                <p><strong>Weakness:</strong> Loud noises disorient it.</p>
             </div>
             <div class="monster">
-                <h3 id="monster3">Monster 3: The Howler</h3>
-                <p><strong>Behavior:</strong> The Howler emits a deafening scream that attracts other monsters.</p>
-                <p><strong>Weakness:</strong> It has low health and can be killed quickly if caught off guard.</p>
+                <h3>The Howler</h3>
+                <p><strong>Behavior:</strong> Emits a deafening scream that attracts other monsters.</p>
+                <p><strong>Weakness:</strong> Low health; can be killed quickly.</p>
             </div>
-            <!-- Add more monsters as needed -->
+            <div class="monster">
+                <h3>The Swarm</h3>
+                <p><strong>Behavior:</strong> A group of small, fast creatures that overwhelm players.</p>
+                <p><strong>Weakness:</strong> Area-of-effect weapons like the Flamethrower.</p>
+            </div>
+            <div class="monster">
+                <h3>The Behemoth</h3>
+                <p><strong>Behavior:</strong> A massive, slow-moving monster with high health.</p>
+                <p><strong>Weakness:</strong> Focus fire on its weak spots.</p>
+            </div>
         </section>
 
-        <!-- Mechanics Section -->
-        <section id="mechanics">
-            <h2>Game Mechanics</h2>
-            <h3>Objectives</h3>
-            <p>Players must work together to collect resources, complete tasks, and survive until extraction.</p>
-            <h3>Teamwork</h3>
-            <p>Communication and coordination are key to surviving the horrors of Lethal Company.</p>
-            <h3>Extraction</h3>
-            <p>Once objectives are completed, players must reach the extraction point before time runs out.</p>
+        <!-- Items Section -->
+        <section id="items">
+            <h2>Items</h2>
+            <div class="item">
+                <h3>Flamethrower</h3>
+                <p><strong>Description:</strong> Effective against swarms of smaller monsters.</p>
+                <p><strong>Usage:</strong> Short-range, high damage.</p>
+            </div>
+            <div class="item">
+                <h3>Shotgun</h3>
+                <p><strong>Description:</strong> Powerful close-range weapon.</p>
+                <p><strong>Usage:</strong> Best for taking down large monsters quickly.</p>
+            </div>
+            <div class="item">
+                <h3>Stun Gun</h3>
+                <p><strong>Description:</strong> Temporarily immobilizes monsters.</p>
+                <p><strong>Usage:</strong> Useful for escaping dangerous situations.</p>
+            </div>
+            <div class="item">
+                <h3>Medkit</h3>
+                <p><strong>Description:</strong> Restores health.</p>
+                <p><strong>Usage:</strong> Use when low on health to survive longer.</p>
+            </div>
+            <div class="item">
+                <h3>Flare</h3>
+                <p><strong>Description:</strong> Provides temporary light in dark areas.</p>
+                <p><strong>Usage:</strong> Use to scare off light-sensitive monsters.</p>
+            </div>
+        </section>
+
+        <!-- Maps Section -->
+        <section id="maps">
+            <h2>Maps</h2>
+            <div class="map">
+                <h3>Abandoned Facility</h3>
+                <p><strong>Description:</strong> A dark, maze-like facility with tight corridors and hidden rooms.</p>
+                <p><strong>Tips:</strong> Use flares to mark your path and avoid getting lost.</p>
+            </div>
+            <div class="map">
+                <h3>Forest Outpost</h3>
+                <p><strong>Description:</strong> An outdoor map with dense foliage and limited visibility.</p>
+                <p><strong>Tips:</strong> Stick to open areas to avoid ambushes.</p>
+            </div>
+            <div class="map">
+                <h3>Underground Bunker</h3>
+                <p><strong>Description:</strong> A claustrophobic underground map with narrow tunnels.</p>
+                <p><strong>Tips:</strong> Watch for traps and hidden monsters.</p>
+            </div>
+            <div class="map">
+                <h3>Industrial Complex</h3>
+                <p><strong>Description:</strong> A large, multi-level map with machinery and hazards.</p>
+                <p><strong>Tips:</strong> Use verticality to your advantage.</p>
+            </div>
+            <div class="map">
+                <h3>Deserted Ship</h3>
+                <p><strong>Description:</strong> A derelict spaceship with zero-gravity areas and malfunctioning systems.</p>
+                <p><strong>Tips:</strong> Use magnetic boots to navigate zero-gravity zones.</p>
+            </div>
+            <div class="map">
+                <h3>Frozen Wasteland</h3>
+                <p><strong>Description:</strong> A snowy, open map with blizzards and freezing temperatures.</p>
+                <p><strong>Tips:</strong> Stay near heat sources to avoid freezing.</p>
+            </div>
+        </section>
+
+        <!-- Steam Page Section -->
+        <section id="steam">
+            <h2>Steam Page</h2>
+            <p>Check out the official Steam page for Lethal Company to learn more, purchase the game, and join the community!</p>
+            <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" class="steam-link" target="_blank">Visit Steam Page</a>
         </section>
     </main>
     <footer>
