@@ -4,23 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lethal Company Guide</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #ff6347;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 5px;
+        }
+        .monster {
+            background: #2e2e2e;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .monster h3 {
+            color: #ff6347;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Lethal Company Guide</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="monsters/index.html">Monsters</a></li>
-                <li><a href="mechanics/index.html">Game Mechanics</a></li>
-            </ul>
-        </nav>
+        <h1>Lethal Company Guide</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#monsters">Monsters</a></li>
+            <li><a href="#mechanics">Mechanics</a></li>
+        </ul>
+    </nav>
     <main>
-        <section>
+        <!-- About Section -->
+        <section id="about">
             <h2>About Lethal Company</h2>
-            <p>Lethal Company is a cooperative horror game where players work together to survive terrifying monsters and complete objectives.</p>
+            <p>Lethal Company is a cooperative horror game where players work together to survive terrifying monsters and complete objectives. This guide provides detailed information about the game's monsters, mechanics, and strategies.</p>
+        </section>
+
+        <!-- Monsters Section -->
+        <section id="monsters">
+            <h2>Monsters</h2>
+            <div class="monster">
+                <h3 id="monster1">Monster 1: The Shadow Stalker</h3>
+                <p><strong>Behavior:</strong> The Shadow Stalker is a stealthy predator that lurks in dark areas. It attacks when players are isolated.</p>
+                <p><strong>Weakness:</strong> Bright light can temporarily stun it.</p>
+            </div>
+            <div class="monster">
+                <h3 id="monster2">Monster 2: The Blood Crawler</h3>
+                <p><strong>Behavior:</strong> This monster crawls on walls and ceilings, dropping down to ambush players.</p>
+                <p><strong>Weakness:</strong> Loud noises can disorient it.</p>
+            </div>
+            <div class="monster">
+                <h3 id="monster3">Monster 3: The Howler</h3>
+                <p><strong>Behavior:</strong> The Howler emits a deafening scream that attracts other monsters.</p>
+                <p><strong>Weakness:</strong> It has low health and can be killed quickly if caught off guard.</p>
+            </div>
+            <!-- Add more monsters as needed -->
+        </section>
+
+        <!-- Mechanics Section -->
+        <section id="mechanics">
+            <h2>Game Mechanics</h2>
+            <h3>Objectives</h3>
+            <p>Players must work together to collect resources, complete tasks, and survive until extraction.</p>
+            <h3>Teamwork</h3>
+            <p>Communication and coordination are key to surviving the horrors of Lethal Company.</p>
+            <h3>Extraction</h3>
+            <p>Once objectives are completed, players must reach the extraction point before time runs out.</p>
         </section>
     </main>
     <footer>
