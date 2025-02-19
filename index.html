@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lethal Company & Content Warning Guide</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Lethal Company & Content Warning Guide</h1>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </header>
     <nav>
         <ul>
@@ -23,222 +25,25 @@
             <li><a href="#steam">Steam Pages</a></li>
         </ul>
     </nav>
+    <input type="text" id="search" placeholder="Search...">
     <main>
-        <!-- About Lethal Company Section -->
         <section id="about-lc">
             <h2>About Lethal Company</h2>
-            <p>
-                <strong>Lethal Company</strong> is a cooperative horror survival game where players take on the role of employees working for a mysterious corporation. Your mission is to scavenge abandoned moons and facilities for valuable resources while avoiding deadly monsters and environmental hazards. Teamwork is essential as you navigate dark, eerie environments, manage limited resources, and complete objectives to meet your profit quota. With procedurally generated maps, unpredictable enemies, and a tense atmosphere, <strong>Lethal Company</strong> offers a thrilling and replayable experience for horror and survival game enthusiasts.
-            </p>
+            <p>Lethal Company is a cooperative horror survival game...</p>
+            <img src="lc-gameplay.jpg" alt="Lethal Company Screenshot">
         </section>
-
-        <!-- Lethal Company Monsters Section -->
+        
         <section id="lc-monsters">
             <h2>Lethal Company Monsters</h2>
             <div class="monster">
                 <h3>The Shadow Stalker</h3>
-                <p><strong>Behavior:</strong> A stealthy predator that lurks in dark areas. It attacks isolated players.</p>
-                <p><strong>Weakness:</strong> Bright light stuns it temporarily.</p>
-            </div>
-            <div class="monster">
-                <h3>The Blood Crawler</h3>
-                <p><strong>Behavior:</strong> Crawls on walls and ceilings, ambushing players from above.</p>
-                <p><strong>Weakness:</strong> Loud noises disorient it.</p>
-            </div>
-            <div class="monster">
-                <h3>The Howler</h3>
-                <p><strong>Behavior:</strong> Emits a deafening scream that attracts other monsters.</p>
-                <p><strong>Weakness:</strong> Low health; can be killed quickly.</p>
-            </div>
-            <div class="monster">
-                <h3>The Swarm</h3>
-                <p><strong>Behavior:</strong> A group of small, fast creatures that overwhelm players.</p>
-                <p><strong>Weakness:</strong> Area-of-effect weapons like the Flamethrower.</p>
-            </div>
-            <div class="monster">
-                <h3>The Behemoth</h3>
-                <p><strong>Behavior:</strong> A massive, slow-moving monster with high health.</p>
-                <p><strong>Weakness:</strong> Focus fire on its weak spots.</p>
+                <p><strong>Behavior:</strong> Lurks in dark areas.</p>
+                <p><strong>Weakness:</strong> Bright light stuns it.</p>
+                <img src="shadow-stalker.jpg" alt="Shadow Stalker Monster">
             </div>
         </section>
 
-        <!-- Lethal Company Items Section -->
-        <section id="lc-items">
-            <h2>Lethal Company Items</h2>
-            <div class="item">
-                <h3>Flamethrower</h3>
-                <p><strong>Description:</strong> Effective against swarms of smaller monsters.</p>
-                <p><strong>Usage:</strong> Short-range, high damage.</p>
-            </div>
-            <div class="item">
-                <h3>Shotgun</h3>
-                <p><strong>Description:</strong> Powerful close-range weapon.</p>
-                <p><strong>Usage:</strong> Best for taking down large monsters quickly.</p>
-            </div>
-            <div class="item">
-                <h3>Stun Gun</h3>
-                <p><strong>Description:</strong> Temporarily immobilizes monsters.</p>
-                <p><strong>Usage:</strong> Useful for escaping dangerous situations.</p>
-            </div>
-            <div class="item">
-                <h3>Medkit</h3>
-                <p><strong>Description:</strong> Restores health.</p>
-                <p><strong>Usage:</strong> Use when low on health to survive longer.</p>
-            </div>
-            <div class="item">
-                <h3>Flare</h3>
-                <p><strong>Description:</strong> Provides temporary light in dark areas.</p>
-                <p><strong>Usage:</strong> Use to scare off light-sensitive monsters.</p>
-            </div>
-        </section>
-
-        <!-- Lethal Company Maps Section -->
-        <section id="lc-maps">
-            <h2>Lethal Company Maps</h2>
-            <div class="map">
-                <h3>41-Experimentation</h3>
-                <div class="map-details">
-                    <p><strong>Difficulty:</strong> B</p>
-                    <p><strong>Cost:</strong> 0</p>
-                    <p><strong>Type:</strong> Factory</p>
-                    <p><strong>Multiplier:</strong> 1</p>
-                    <p><strong>Enemies:</strong> 8-11</p>
-                    <p><strong>Loot:</strong> 4-8</p>
-                    <p><strong>Weather:</strong> Rainy, Stormy, Foggy, Flooded, Eclipsed</p>
-                </div>
-            </div>
-            <div class="map">
-                <h3>220-Assurance</h3>
-                <div class="map-details">
-                    <p><strong>Difficulty:</strong> D</p>
-                    <p><strong>Cost:</strong> 0</p>
-                    <p><strong>Type:</strong> Factory</p>
-                    <p><strong>Multiplier:</strong> 1</p>
-                    <p><strong>Enemies:</strong> 13-15</p>
-                    <p><strong>Loot:</strong> 6-8</p>
-                    <p><strong>Weather:</strong> Rainy, Stormy, Foggy, Flooded, Eclipsed</p>
-                </div>
-            </div>
-            <!-- Add more maps as needed -->
-        </section>
-
-        <!-- About Content Warning Section -->
-        <section id="about-cw">
-            <h2>About Content Warning</h2>
-            <p>
-                <strong>Content Warning</strong> is a thrilling multiplayer horror game where players work together to investigate and document paranormal activities. Armed with cameras and limited equipment, you and your team must explore haunted locations, capture evidence of supernatural phenomena, and survive terrifying encounters. The game emphasizes teamwork, strategy, and quick thinking as you face unpredictable threats and uncover the mysteries behind each location. With procedurally generated events and a dynamic scare system, <strong>Content Warning</strong> delivers a unique and spine-chilling experience every time.
-            </p>
-        </section>
-
-        <!-- Content Warning Entities Section -->
-        <section id="cw-entities">
-            <h2>Content Warning Entities</h2>
-            <div class="entity">
-                <h3>Ghosts</h3>
-                <p><strong>Description:</strong> Spirits that haunt specific areas and can manifest in various forms.</p>
-                <p><strong>Behavior:</strong> They may follow players, create noises, or attack when provoked.</p>
-            </div>
-            <div class="entity">
-                <h3>Demons</h3>
-                <p><strong>Description:</strong> Powerful entities that require specific rituals to banish.</p>
-                <p><strong>Behavior:</strong> Highly aggressive and can possess players or objects.</p>
-            </div>
-            <div class="entity">
-                <h3>Poltergeists</h3>
-                <p><strong>Description:</strong> Mischievous spirits that manipulate objects in the environment.</p>
-                <p><strong>Behavior:</strong> They throw items, slam doors, and create chaos.</p>
-            </div>
-            <div class="entity">
-                <h3>Shadows</h3>
-                <p><strong>Description:</strong> Dark, humanoid figures that stalk players.</p>
-                <p><strong>Behavior:</strong> They move quickly and attack when players are isolated.</p>
-            </div>
-            <div class="entity">
-                <h3>Wraiths</h3>
-                <p><strong>Description:</strong> Invisible entities that emit eerie sounds.</p>
-                <p><strong>Behavior:</strong> They drain sanity and can only be detected with specialized equipment.</p>
-            </div>
-            <div class="entity">
-                <h3>Revenants</h3>
-                <p><strong>Description:</strong> Vengeful spirits tied to specific locations.</p>
-                <p><strong>Behavior:</strong> They become more aggressive as players stay longer in their territory.</p>
-            </div>
-        </section>
-
-        <!-- Content Warning Equipment Section -->
-        <section id="cw-equipment">
-            <h2>Content Warning Equipment</h2>
-            <div class="equipment">
-                <h3>EMF Reader</h3>
-                <p><strong>Description:</strong> Detects electromagnetic fluctuations caused by paranormal activity.</p>
-                <p><strong>Usage:</strong> Helps identify the presence of ghosts and other entities.</p>
-            </div>
-            <div class="equipment">
-                <h3>Spirit Box</h3>
-                <p><strong>Description:</strong> Allows communication with spirits through white noise.</p>
-                <p><strong>Usage:</strong> Use to gather evidence of ghostly activity.</p>
-            </div>
-            <div class="equipment">
-                <h3>UV Flashlight</h3>
-                <p><strong>Description:</strong> Reveals fingerprints and other traces left by entities.</p>
-                <p><strong>Usage:</strong> Essential for identifying certain types of ghosts.</p>
-            </div>
-            <div class="equipment">
-                <h3>Holy Water</h3>
-                <p><strong>Description:</strong> A tool for banishing demons and cleansing haunted areas.</p>
-                <p><strong>Usage:</strong> Use sparingly, as it has limited charges.</p>
-            </div>
-            <div class="equipment">
-                <h3>Camera</h3>
-                <p><strong>Description:</strong> Captures visual evidence of paranormal activity.</p>
-                <p><strong>Usage:</strong> Document ghostly apparitions and other phenomena.</p>
-            </div>
-        </section>
-
-        <!-- Content Warning Maps Section -->
-        <section id="cw-maps">
-            <h2>Content Warning Maps</h2>
-            <div class="map">
-                <h3>Abandoned Asylum</h3>
-                <div class="map-details">
-                    <p><strong>Description:</strong> A crumbling mental hospital filled with restless spirits.</p>
-                    <p><strong>Features:</strong> Long hallways, patient rooms, and a dark basement.</p>
-                    <p><strong>Entities:</strong> Ghosts, Poltergeists, Shadows</p>
-                </div>
-            </div>
-            <div class="map">
-                <h3>Haunted Mansion</h3>
-                <div class="map-details">
-                    <p><strong>Description:</strong> A grand, eerie mansion with a tragic history.</p>
-                    <p><strong>Features:</strong> Multiple floors, secret passages, and a cursed attic.</p>
-                    <p><strong>Entities:</strong> Demons, Wraiths, Revenants</p>
-                </div>
-            </div>
-            <div class="map">
-                <h3>Forgotten Cemetery</h3>
-                <div class="map-details">
-                    <p><strong>Description:</strong> An overgrown graveyard with restless souls.</p>
-                    <p><strong>Features:</strong> Tombstones, mausoleums, and a hidden crypt.</p>
-                    <p><strong>Entities:</strong> Ghosts, Shadows, Revenants</p>
-                </div>
-            </div>
-            <div class="map">
-                <h3>Derelict Schoolhouse</h3>
-                <div class="map-details">
-                    <p><strong>Description:</strong> An abandoned school with a dark past.</p>
-                    <p><strong>Features:</strong> Classrooms, a gymnasium, and a haunted basement.</p>
-                    <p><strong>Entities:</strong> Poltergeists, Wraiths, Ghosts</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Steam Pages Section -->
-        <section id="steam">
-            <h2>Steam Pages</h2>
-            <p>Check out the official Steam pages for both games to learn more, purchase them, and join the community!</p>
-            <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" class="steam-link" target="_blank">Lethal Company on Steam</a>
-            <a href="https://store.steampowered.com/app/2881650/Content_Warning/" class="steam-link" target="_blank">Content Warning on Steam</a>
-        </section>
+        <button id="back-to-top">Back to Top</button>
     </main>
     <footer>
         <p>&copy; 2025 Heyimlennon. All rights reserved.</p>
