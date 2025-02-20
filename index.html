@@ -5,6 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lethal Company & Content Warning Guide</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #ff6f61;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #ff6f61;
+        }
+        .monster, .item, .entity, .equipment, .map {
+            background: #2a2a2a;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .steam-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .steam-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .steam-link:hover {
+            background: #ff3b2f;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,39 +106,33 @@
         </ul>
     </nav>
     <main>
-        <!-- Lethal Company Sections -->
+        <!-- About Lethal Company Section -->
         <section id="about-lc">
             <h2>About Lethal Company</h2>
             <p>
-                <strong>Overview:</strong> Lethal Company is a cooperative horror game where players take on the role of scavengers exploring abandoned industrial facilities. The goal is to collect scrap, avoid deadly monsters, and escape before time runs out.
+                <strong>Lethal Company</strong> is a cooperative horror survival game where players work as employees of a mysterious corporation. Your mission is to scavenge abandoned moons and facilities for valuable resources while avoiding deadly monsters and environmental hazards. Teamwork is essential as you navigate dark, eerie environments, manage limited resources, and complete objectives to meet your profit quota. With procedurally generated maps, unpredictable enemies, and a tense atmosphere, <strong>Lethal Company</strong> offers a thrilling and replayable experience for horror and survival game enthusiasts.
             </p>
-            <p>
-                <strong>Key Features:</strong>
-            </p>
-            <ul>
-                <li>Cooperative multiplayer experience.</li>
-                <li>Procedurally generated levels for replayability.</li>
-                <li>Terrifying creatures that react to player actions.</li>
-                <li>Limited resources and communication tools.</li>
-            </ul>
         </section>
-        
+
+        <!-- How to Play Lethal Company Section -->
         <section id="how-to-play-lc">
             <h2>How to Play Lethal Company</h2>
             <p>
-                <strong>Objective:</strong> Work as a team to scavenge abandoned facilities for valuable scrap while avoiding deadly monsters and hazards.
+                <strong>Objective:</strong> Work as a team to scavenge resources from abandoned moons and facilities while avoiding deadly monsters and environmental hazards. Meet your profit quota to survive and progress.
             </p>
             <p>
                 <strong>Key Mechanics:</strong>
             </p>
             <ul>
-                <li><strong>Teamwork:</strong> Coordinate tasks such as scavenging, defending, and navigating through dark environments.</li>
-                <li><strong>Resource Management:</strong> Collect and manage scrap and tools efficiently to meet your profit quota.</li>
-                <li><strong>Stealth & Combat:</strong> Avoid or fight monsters using available items, each of which offers unique advantages.</li>
-                <li><strong>Procedural Levels:</strong> Each playthrough is different due to randomly generated maps and enemy placements.</li>
+                <li><strong>Teamwork:</strong> Coordinate with your team to divide tasks, such as scavenging, defending, and managing resources.</li>
+                <li><strong>Resource Management:</strong> Collect valuable items and manage your inventory carefully to maximize efficiency.</li>
+                <li><strong>Combat:</strong> Use weapons and tools to defend yourself against monsters. Some enemies require specific strategies to defeat.</li>
+                <li><strong>Exploration:</strong> Navigate procedurally generated maps to find loot and complete objectives.</li>
+                <li><strong>Profit Quota:</strong> Meet the quota set by the company to avoid penalties and progress to more challenging missions.</li>
             </ul>
         </section>
-        
+
+        <!-- Lethal Company Monsters Section -->
         <section id="lc-monsters">
             <h2>Lethal Company Monsters</h2>
             <div class="monster">
@@ -146,13 +220,14 @@
                 <p><strong>Favorite Moon:</strong> 21-Offense</p>
             </div>
         </section>
-        
+
+        <!-- Lethal Company Items Section -->
         <section id="lc-items">
             <h2>Lethal Company Items</h2>
             <div class="item">
                 <h3>Walkie-Talkie</h3>
                 <p><strong>Price:</strong> $12</p>
-                <p><strong>Description:</strong> Useful for keeping in touch! Hear other players when the walkie-talkie is in your inventory. Must be held and pressed to transmit voice.</p>
+                <p><strong>Description:</strong> Useful for keeping in touch! Hear other players when the walkie-talkie is in your inventory. Must be in your hand and pressed down to transmit voice.</p>
             </div>
             <div class="item">
                 <h3>Flashlight</h3>
@@ -162,60 +237,61 @@
             <div class="item">
                 <h3>Shovel</h3>
                 <p><strong>Price:</strong> $30</p>
-                <p><strong>Description:</strong> Useful for both scavenging and self-defense.</p>
+                <p><strong>Description:</strong> For self-defense!</p>
             </div>
             <div class="item">
                 <h3>Lockpicker</h3>
                 <p><strong>Price:</strong> $20</p>
-                <p><strong>Description:</strong> Unlock doors and containers with ease using proprietary AI technology.</p>
+                <p><strong>Description:</strong> Lock-pickers will unlock your limitless potential for efficiency on the job. Powered by proprietary AI software, they will get you access through any locked door.</p>
             </div>
             <div class="item">
                 <h3>Pro-Flashlight</h3>
                 <p><strong>Price:</strong> $25</p>
-                <p><strong>Description:</strong> Extra battery life and brightness for those darker missions.</p>
+                <p><strong>Description:</strong> With an extra battery life and even brighter bulb, your colleagues can never leave you in the dark again!</p>
             </div>
             <div class="item">
                 <h3>Stun Grenade</h3>
                 <p><strong>Price:</strong> $40</p>
-                <p><strong>Description:</strong> Temporarily stuns monsters, giving you time to reposition or escape.</p>
+                <p><strong>Description:</strong> Temporarily stuns monsters, giving you time to escape or reposition.</p>
             </div>
             <div class="item">
                 <h3>Boombox</h3>
                 <p><strong>Price:</strong> $60</p>
-                <p><strong>Description:</strong> Play jamming tunes to boost team morale during tense moments.</p>
+                <p><strong>Description:</strong> These jamming tunes are great for a morale boost on your crew!</p>
             </div>
             <div class="item">
                 <h3>TZP-Inhalant</h3>
                 <p><strong>Price:</strong> $120</p>
-                <p><strong>Description:</strong> Enhances stamina and strength, but use with caution as extended exposure can affect the brain.</p>
+                <p><strong>Description:</strong> This safe and legal medicine can be administered to see great benefits to your performance on the job! Your ability to move LONG distances while carrying HEFTY objects will be second to none! Warning: TZP gas may impact the brain with extended exposure. Follow instructions manual provided with the canister. Don't forget to share!</p>
             </div>
             <div class="item">
                 <h3>Zap Gun</h3>
                 <p><strong>Price:</strong> $400</p>
-                <p><strong>Description:</strong> A high-voltage weapon designed to temporarily stun and deter monsters.</p>
+                <p><strong>Description:</strong> The most specialized self-protective equipment, capable of sending upwards of 80,000 volts! To keep it targeted as long as possible, pull the gun side-to-side to counter the bend and fight against the pull of the electric beam. It can only stun for as long as you keep the current flowing.</p>
             </div>
             <div class="item">
                 <h3>Jetpack</h3>
                 <p><strong>Price:</strong> $700</p>
-                <p><strong>Description:</strong> Provides rapid movement and vertical mobility for quick escapes.</p>
+                <p><strong>Description:</strong> This device will get you around anywhere! Just use it responsibly!</p>
             </div>
             <div class="item">
                 <h3>Extension Ladder</h3>
                 <p><strong>Price:</strong> $60</p>
-                <p><strong>Description:</strong> Reach high places and scale cliffs. Automatically retracts after 18 seconds to save battery.</p>
+                <p><strong>Description:</strong> The extension ladder can reach as high as nine meters! Use it to scale any cliff and reach for the stars! To save batteries, the extension ladder automatically stores itself after 18 seconds.</p>
             </div>
             <div class="item">
                 <h3>Radar Booster</h3>
                 <p><strong>Price:</strong> $60</p>
-                <p><strong>Description:</strong> Enhance your in-game radar; use commands to view on your monitor or play special sounds.</p>
+                <p><strong>Description:</strong> Radar boosters come with many uses! Use the SWITCH command before the radar booster's name to view it on the main monitor. It must be activated. Use the PING command before the radar booster's name to play a special sound from the device.</p>
             </div>
             <div class="item">
                 <h3>Spray Paint Can</h3>
                 <p><strong>Price:</strong> $50</p>
-                <p><strong>Description:</strong> Use it to tag walls or mark explored areas.</p>
+                <p><strong>Description:</strong> Use Spray Paint to paint on the wall.</p>
             </div>
         </section>
-        
+
+        <!-- Lethal Company Maps Section -->
         <section id="lc-maps">
             <h2>Lethal Company Maps</h2>
             <div class="map">
@@ -243,114 +319,132 @@
                 <p><strong>Loot:</strong> 7-9</p>
             </div>
         </section>
-        
-        <!-- Content Warning Sections -->
+
+        <!-- About Content Warning Section -->
         <section id="about-cw">
             <h2>About Content Warning</h2>
             <p>
-                <strong>Overview:</strong> Content Warning is a paranormal investigation game where players document supernatural encounters using specialized equipment. The goal is to capture as much paranormal activity on camera as possible while surviving the investigation.
+                <strong>Content Warning</strong> is a thrilling multiplayer horror game where players work together to investigate and document paranormal activities. Armed with cameras and limited equipment, you and your team must explore haunted locations, capture evidence of supernatural phenomena, and survive terrifying encounters. The game emphasizes teamwork, strategy, and quick thinking as you face unpredictable threats and uncover the mysteries behind each location. With procedurally generated events and a dynamic scare system, <strong>Content Warning</strong> delivers a unique and spine-chilling experience every time.
             </p>
-            <p>
-                <strong>Key Features:</strong>
-            </p>
-            <ul>
-                <li>Immersive horror experience with realistic audio effects.</li>
-                <li>Multiple haunted locations with unique supernatural threats.</li>
-                <li>Cooperative and competitive gameplay mechanics.</li>
-                <li>Equipment upgrades and unlockable tools for better investigations.</li>
-            </ul>
         </section>
-        
+
+        <!-- How to Play Content Warning Section -->
         <section id="how-to-play-cw">
             <h2>How to Play Content Warning</h2>
             <p>
-                <strong>Objective:</strong> Work as a team to investigate haunted locations, capture evidence of supernatural activity, and survive the horrors within.
+                <strong>Objective:</strong> Work as a team to investigate haunted locations, capture evidence of supernatural phenomena, and survive terrifying encounters. Your goal is to document as much evidence as possible while avoiding deadly entities and environmental hazards.
             </p>
             <p>
                 <strong>Key Mechanics:</strong>
             </p>
             <ul>
-                <li><strong>Teamwork:</strong> Communicate effectively with your team to ensure everyone's safety.</li>
-                <li><strong>Equipment Usage:</strong> Use cameras, motion detectors, and other tools to document paranormal events.</li>
-                <li><strong>Survival:</strong> Avoid supernatural threats and manage your fear levels.</li>
-                <li><strong>Investigation:</strong> Gather and analyze evidence to determine the nature of the haunting.</li>
+                <li><strong>Teamwork:</strong> Coordinate with your team to divide tasks, such as filming, defending, and managing equipment.</li>
+                <li><strong>Evidence Collection:</strong> Use cameras and other equipment to capture paranormal activity. The more evidence you collect, the higher your score.</li>
+                <li><strong>Survival:</strong> Avoid or defend against hostile entities. Some entities require specific strategies to evade or defeat.</li>
+                <li><strong>Exploration:</strong> Navigate procedurally generated maps to find evidence and complete objectives.</li>
+                <li><strong>Resource Management:</strong> Manage your equipment and resources carefully to maximize efficiency and survival.</li>
             </ul>
         </section>
-        
+
+        <!-- Content Warning Entities Section -->
         <section id="cw-entities">
             <h2>Content Warning Entities</h2>
             <div class="entity">
-                <h3>The Shadow</h3>
-                <p><strong>Description:</strong> A mysterious figure lurking in the darkness, causing disorientation and fear when glimpsed.</p>
+                <h3>Shadow Figure</h3>
+                <p><strong>Behavior:</strong> A dark, humanoid figure that lurks in the shadows. It is highly aggressive and will chase players if provoked.</p>
+                <p><strong>Weakness:</strong> Can be temporarily repelled with a flashlight.</p>
             </div>
             <div class="entity">
-                <h3>The Screamer</h3>
-                <p><strong>Description:</strong> Emits a terrifying, piercing cry that disorients and terrifies anyone nearby.</p>
+                <h3>Wraith</h3>
+                <p><strong>Behavior:</strong> A ghostly entity that can phase through walls and objects. It is attracted to sound and will hunt players who make too much noise.</p>
+                <p><strong>Weakness:</strong> Can be temporarily stunned with a stun grenade.</p>
             </div>
             <div class="entity">
-                <h3>The Mimic</h3>
-                <p><strong>Description:</strong> Imitates the voices and appearances of teammates to lure players into traps.</p>
+                <h3>Poltergeist</h3>
+                <p><strong>Behavior:</strong> A mischievous entity that manipulates objects and creates environmental hazards. It is not directly aggressive but can cause significant harm.</p>
+                <p><strong>Weakness:</strong> Can be temporarily banished with a spirit box.</p>
             </div>
             <div class="entity">
-                <h3>The Collector</h3>
-                <p><strong>Description:</strong> A sinister entity that gathers remnants of lost souls, leaving behind an aura of despair.</p>
+                <h3>Banshee</h3>
+                <p><strong>Behavior:</strong> A female spirit that emits a piercing scream. The scream can disorient and damage players if they are too close.</p>
+                <p><strong>Weakness:</strong> Can be temporarily silenced with a soundproof barrier.</p>
             </div>
             <div class="entity">
-                <h3>The Harbinger</h3>
-                <p><strong>Description:</strong> Appears as a forewarning before major supernatural events, heralding imminent danger.</p>
-            </div>
-            <div class="entity">
-                <h3>The Wailer</h3>
-                <p><strong>Description:</strong> A ghostly figure whose mournful cries signal the approach of unseen horrors.</p>
-            </div>
-            <div class="entity">
-                <h3>The Specter</h3>
-                <p><strong>Description:</strong> An ethereal presence that can phase through walls and surfaces, appearing unexpectedly.</p>
-            </div>
-            <div class="entity">
-                <h3>The Faceless</h3>
-                <p><strong>Description:</strong> A shape-shifting entity with no discernible features, leaving behind only terror.</p>
-            </div>
-            <div class="entity">
-                <h3>The Lurker</h3>
-                <p><strong>Description:</strong> Waits silently in the shadows, emerging when least expected to ambush its victims.</p>
+                <h3>Demon</h3>
+                <p><strong>Behavior:</strong> A powerful and aggressive entity that can possess players and objects. It is highly dangerous and requires teamwork to defeat.</p>
+                <p><strong>Weakness:</strong> Can be exorcised with a crucifix and holy water.</p>
             </div>
         </section>
-        
+
+        <!-- Content Warning Equipment Section -->
         <section id="cw-equipment">
             <h2>Content Warning Equipment</h2>
             <div class="equipment">
-                <h3>Infrared Camera</h3>
-                <p><strong>Function:</strong> Detects heat signatures of supernatural entities.</p>
+                <h3>Camera</h3>
+                <p><strong>Description:</strong> The primary tool for capturing evidence of paranormal activity. Essential for completing objectives.</p>
+            </div>
+            <div class="equipment">
+                <h3>Flashlight</h3>
+                <p><strong>Description:</strong> A basic light source that can repel certain entities. Essential for navigating dark environments.</p>
+            </div>
+            <div class="equipment">
+                <h3>Stun Grenade</h3>
+                <p><strong>Description:</strong> Temporarily stuns entities, giving players time to escape or reposition.</p>
             </div>
             <div class="equipment">
                 <h3>Spirit Box</h3>
-                <p><strong>Function:</strong> Communicates with spirits using radio frequencies.</p>
+                <p><strong>Description:</strong> A device used to communicate with and banish certain entities. Requires teamwork to use effectively.</p>
             </div>
             <div class="equipment">
-                <h3>EMF Detector</h3>
-                <p><strong>Function:</strong> Measures electromagnetic fields to detect paranormal presence.</p>
+                <h3>Soundproof Barrier</h3>
+                <p><strong>Description:</strong> A deployable barrier that can block sound and silence certain entities.</p>
+            </div>
+            <div class="equipment">
+                <h3>Crucifix</h3>
+                <p><strong>Description:</strong> A religious item used to exorcise powerful entities. Requires holy water to use.</p>
+            </div>
+            <div class="equipment">
+                <h3>Holy Water</h3>
+                <p><strong>Description:</strong> A consumable item used in conjunction with a crucifix to exorcise demons.</p>
             </div>
         </section>
-        
+
+        <!-- Content Warning Maps Section -->
         <section id="cw-maps">
             <h2>Content Warning Maps</h2>
             <div class="map">
                 <h3>Abandoned Asylum</h3>
-                <p><strong>Description:</strong> A decrepit facility filled with eerie noises and lurking spirits.</p>
-            </div>
-            <div class="map">
-                <h3>Forgotten Church</h3>
-                <p><strong>Description:</strong> An ancient church where apparitions appear at night.</p>
+                <p><strong>Description:</strong> A creepy, abandoned asylum with narrow hallways and hidden rooms. High chance of encountering aggressive entities.</p>
+                <p><strong>Entities:</strong> Shadow Figure, Wraith, Poltergeist</p>
             </div>
             <div class="map">
                 <h3>Haunted Mansion</h3>
-                <p><strong>Description:</strong> A large estate with hidden rooms and restless spirits.</p>
+                <p><strong>Description:</strong> A large, decrepit mansion with multiple floors and secret passages. High chance of encountering mischievous entities.</p>
+                <p><strong>Entities:</strong> Poltergeist, Banshee, Demon</p>
+            </div>
+            <div class="map">
+                <h3>Forest Cemetery</h3>
+                <p><strong>Description:</strong> A dark, eerie cemetery surrounded by dense forest. High chance of encountering wandering spirits.</p>
+                <p><strong>Entities:</strong> Wraith, Banshee, Shadow Figure</p>
+            </div>
+            <div class="map">
+                <h3>Derelict Hospital</h3>
+                <p><strong>Description:</strong> A rundown hospital with abandoned medical equipment and operating rooms. High chance of encountering hostile entities.</p>
+                <p><strong>Entities:</strong> Shadow Figure, Demon, Poltergeist</p>
+            </div>
+        </section>
+
+        <!-- Steam Pages Section -->
+        <section id="steam">
+            <h2>Steam Pages</h2>
+            <div class="steam-links">
+                <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" class="steam-link">Lethal Company on Steam</a>
+                <a href="https://store.steampowered.com/app/1302210/Content_Warning/" class="steam-link">Content Warning on Steam</a>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Lethal Company & Content Warning Guide. All rights reserved.</p>
+        <p>&copy; 2023 Lethal Company & Content Warning Guide. All rights reserved.</p>
     </footer>
 </body>
 </html>
